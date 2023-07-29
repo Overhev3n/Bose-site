@@ -1,0 +1,209 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+ margin: 0;
+ font-family:'Inter', sans-serif;
+ color: #292929;
+ font-size: 16px;
+ line-height: 140%;
+}
+
+.header{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box ;
+  height: 100vh;
+  padding: 64px 120px;
+  background-image: url(./images/Headphones-image-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__top{
+display: flex;
+justify-content: space-between;
+}
+
+.header__title{
+  margin-top: 40px;
+  margin-bottom: 0;
+font-size: 48px;
+line-height: 100%;
+font-style: italic;
+font-weight: 800px;
+letter-spacing: -1.5%;
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform:translateX(-100%);
+  transition: transform 500ms;
+  box-sizing: border-box ;
+  height: 100vh;
+  padding: 64px 120px;
+  background:#E5E5E5; 
+}
+.menu:target{
+  transform: translateX(-0%);
+}
+.menu__top{
+display: flex;
+justify-content: space-between;
+margin-bottom: 64px;
+}
+
+.nav{
+ display: flex;
+ flex-direction: column;
+ gap: 32px;
+}
+.nav__link{
+   color: #292929;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.recommended{
+  margin-bottom: 120px;
+}
+
+.recommended__title{
+margin-top: 0;
+margin-bottom: 64px;
+font-size: 48px;
+line-height: 100%;
+font-weight: bold;
+text-align: center;
+letter-spacing: -1.5%;
+color: #292929;
+}
+
+.recomended__products{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+@media(max-width:640px){
+  .recomended__products{
+    flex-direction: column;
+  }
+}
+
+.product{
+  flex-basis: 324px;
+}
+
+.product__photo{
+  width: 100%;
+  margin-bottom: 32px;
+}
+.product__title{
+margin-top: 0;
+margin-bottom: 8px;
+font-size: 16px;
+line-height: 140%;
+}
+.product__category{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.product__price{
+  font-weight: bold;
+  margin: 0;
+}
+
+.main{
+  padding: 120px;
+  background-color: #fff;
+}
+
+.categories__title{
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -1.5%;
+  color: #292929;
+}
+
+.how-to-buy{
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+.how-to-buy__title{
+  flex-basis: 50%;
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -1.5%;
+}
+.how-to-buy__content{
+  flex-basis: 50%;
+}
+.how-to-buy__benefits{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.category{
+  margin-bottom: 64px;
+}
+.categories{
+  margin: 0 auto;
+  max-width: 1020px;
+  margin-bottom: 120px;
+}
+.category__photos{
+  display: flex;
+  gap: 3%;
+  margin-bottom: 16px;
+}
+.category_title{
+  margin: 0;
+}
+.photo-wide{
+  width: 65%;
+}
+.photo-square{
+  width: 32%;
+}
+
+.footer{
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  height: 460px;
+  background-image: url(./images/footer-background.png) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
